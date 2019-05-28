@@ -1,0 +1,119 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>这是一个搜索引擎系统</title>
+<!-- Custom Theme files -->
+<link href="static/css/style2.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<style>
+.content{
+font-family:"微软雅黑"; 
+font-size:22px; 
+color:white;  
+font-weight:normal; 
+}
+a:link {color: #F5F5F5}
+a:visited {color: #8FBC8F}
+a:hover {color: #FFDAB9}
+.btn{ 
+width:80px; 
+height:30px; 
+background:#778899;
+font-family:"微软雅黑"; 
+font-size:18px; 
+color:#FFF; 
+} 
+table td{ 
+<!-- width:80px;  -->
+height:20px;  
+
+padding:15px;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="keywords" content="Flat Search Box Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<!--Google Fonts-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<!--Google Fonts-->
+</head>
+<body>
+<!--search start here-->
+<div class="search">
+	<i> </i>
+	<div class="s-bar">
+	   <form method="post">
+		<input type="text" value="输入关键词" name="keyword" id="keyword" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '输入关键词';}">
+		<input type="submit"  value="搜索"/>
+	  </form>
+	</div>
+</div>
+<!--search end here-->	
+<div style="margin:0 auto;width: 1500px" class="content"> 
+	<table style="width: 1500px" border="5">
+			<!-- 整个table的标题,不管在哪个地方添加,它都会被放在最上面-->
+			<caption><b>{{tuple.0.1}}的搜索内容</b></caption>
+
+			<tbody>
+			   <tr>
+				 <td><a href="{{tuple.0.3}}">{{tuple.0.2}}</a></td>
+				 <td>{{tuple.0.4}} {{tuple.0.5}}</td>
+			   </tr>
+			   <tr>
+				 <td><a href="{{tuple.1.3}}">{{tuple.1.2}}</a></td>
+				 <td>{{tuple.1.4}} {{tuple.1.5}}</td>
+			   </tr>
+			   <tr>
+				 <td><a href="{{tuple.2.3}}">{{tuple.2.2}}</a></td>
+				 <td>{{tuple.2.4}} {{tuple.2.5}}</td>
+			   </tr>
+			   <tr>
+				 <td><a href="{{tuple.3.3}}">{{tuple.3.2}}</a></td>
+				 <td>{{tuple.3.4}} {{tuple.3.5}}</td>
+			   </tr>
+			   <tr>
+				 <td><a href="{{tuple.4.3}}">{{tuple.4.2}}</a></td>
+				 <td>{{tuple.4.4}} {{tuple.4.5}}</td>
+			   </tr>
+			   <tr>
+				 <td><a href="{{tuple.5.3}}">{{tuple.5.2}}</a></td>
+				 <td>{{tuple.5.4}} {{tuple.5.5}}</td>
+			   </tr>
+			   <tr>
+				 <td><a href="{{tuple.6.3}}">{{tuple.6.2}}</a></td>
+				 <td>{{tuple.6.4}} {{tuple.6.5}}</td>
+			   </tr>
+			   <tr>
+				 <td><a href="{{tuple.7.3}}">{{tuple.7.2}}</a></td>
+				 <td>{{tuple.7.4}} {{tuple.7.5}}</td>
+			   </tr>
+			   <tr>
+				 <td><a href="{{tuple.8.3}}">{{tuple.8.2}}</a></td>
+				 <td>{{tuple.8.4}} {{tuple.8.5}}</td>
+			   </tr>
+			   <tr>
+				 <td><a href="{{tuple.9.3}}">{{tuple.9.2}}</a></td>
+				 <td>{{tuple.9.4}} {{tuple.9.5}}</td>
+			   </tr>
+
+			</tbody>
+			<tfoot>
+			<tr>
+				<td colspan="2" style="text-align: right">	   
+				<form method="post">
+					<input type="submit" class="btn" name="nextpage" value="下一页"/>
+					<input type="hidden" name="keyword" value={{tuple.0.1}} />
+				</form>
+				</td>
+			</tr>
+			</tfoot>
+	</table>
+</div>
+</body>
+</html>
